@@ -131,8 +131,6 @@ These results describe the tested datasets, versions, and implemented checks; **
 
 This is a self-study resource. Try each exercise before opening the reference solution; then use the validation notebooks to check your work. Suggestions and improvements can be submitted through GitHub issues or pull requests if those features are enabled on the repository.
 
-**License:** No open-source license is included by default. If you want others to have explicit permission to reuse or redistribute the material, add a license file appropriate to your goals.
-
 ## License
 
 This project is licensed under the MIT License.
