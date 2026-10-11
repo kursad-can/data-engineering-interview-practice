@@ -52,6 +52,191 @@ coding-exercises/
 
 The local PySpark environment used **Spark 4.2.0**. The dependency file does not necessarily pin all versions; if a newer package behaves differently, use compatible versions and consult the relevant project's documentation.
 
+
+## PySpark / Java Setup
+
+The PySpark exercises require a compatible Java Development Kit (JDK). Installing the Python `pyspark` package alone does not install Java.
+
+### Recommended Environment
+
+| Component | Recommended Version |
+|---|---|
+| Python | 3.11–3.14 (depending on PySpark compatibility) |
+| Apache Spark / PySpark | 4.2.0 (locally tested) |
+| Java JDK | 17 or 21 |
+| IDE | VS Code with Python and Jupyter extensions |
+
+> **Note:** This project was developed and tested locally using PySpark 4.2.0. Other versions may work, but compatibility is not guaranteed. Spark 4.x requires Java 17 or later. Check the official [Apache Spark documentation](https://spark.apache.org/docs/latest/) for version-specific requirements.
+
+### 1. Install Java JDK
+
+#### macOS (Homebrew)
+
+Install OpenJDK 17:
+
+```bash
+brew install openjdk@17
+```
+
+Register the JDK with macOS:
+
+```bash
+sudo ln -sfn "$(brew --prefix openjdk@17)/libexec/openjdk.jdk" /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+```
+
+Configure `JAVA_HOME` for the current terminal session:
+
+```bash
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
+To make these settings persistent when using the default macOS Zsh shell:
+
+```bash
+echo 'export JAVA_HOME=$(/usr/libexec/java_home -v 17)' >> ~/.zshrc
+echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+#### Windows
+
+1. Download and install **Eclipse Temurin JDK 17** from [Adoptium](https://adoptium.net/).
+2. During installation, enable the options to set `JAVA_HOME` and update `PATH`, if available.
+3. Restart VS Code and open a new terminal.
+
+Verify Java in PowerShell:
+
+```powershell
+java -version
+echo $env:JAVA_HOME
+```
+
+If `JAVA_HOME` is missing, configure it through:
+
+**System Properties → Advanced → Environment Variables**
+
+Set `JAVA_HOME` to your JDK installation directory and add `%JAVA_HOME%\bin` to `Path`.
+
+#### Ubuntu / Debian Linux
+
+Install OpenJDK 17:
+
+```bash
+sudo apt update
+sudo apt install -y openjdk-17-jdk
+```
+
+Configure `JAVA_HOME` for the current terminal session:
+
+```bash
+export JAVA_HOME=$(dirname "$(dirname "$(readlink -f "$(which java)")")")
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
+To make the configuration persistent, add the appropriate `JAVA_HOME` and `PATH` exports to your shell startup file (for example, `~/.bashrc`).
+
+### 2. Verify Java Installation
+
+Open a new terminal and run:
+
+```bash
+java -version
+```
+
+Expected output should indicate Java 17 or another compatible version.
+
+On macOS / Linux, verify `JAVA_HOME`:
+
+```bash
+echo $JAVA_HOME
+```
+
+On Windows PowerShell:
+
+```powershell
+echo $env:JAVA_HOME
+```
+
+### 3. Install Python Dependencies
+
+From the repository root, create and activate a Python virtual environment.
+
+**macOS / Linux:**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+**Windows PowerShell:**
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Install the project dependencies:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+> **Version compatibility:** The `requirements.txt` file does not pin PySpark to a specific version. For the locally tested Spark version, you can explicitly install `pyspark==4.2.0`, provided it is compatible with your Python environment.
+
+### 4. Verify PySpark Installation
+
+Run the following Python code in a notebook or Python script:
+
+```python
+from pyspark.sql import SparkSession
+
+spark = (
+    SparkSession.builder
+    .master("local[*]")
+    .appName("DataEngineeringInterviewPractice")
+    .getOrCreate()
+)
+
+print("Spark version:", spark.version)
+
+df = spark.createDataFrame(
+    [(1, "Alice"), (2, "Bob")],
+    ["id", "name"]
+)
+
+df.show()
+
+spark.stop()
+```
+
+Expected DataFrame output:
+
+```text
++---+-----+
+| id| name|
++---+-----+
+|  1|Alice|
+|  2|  Bob|
++---+-----+
+```
+
+If the DataFrame is displayed successfully, your local PySpark environment is ready.
+
+### 5. Common Troubleshooting
+
+| Issue | Possible Solution |
+|---|---|
+| `JAVA_HOME is not set` | Install a compatible JDK and configure `JAVA_HOME`. |
+| `java: command not found` | Verify the Java installation and update `PATH`. |
+| `UnsupportedClassVersionError` | Check that your Java version is compatible with your Spark version. |
+| `Py4JJavaError` | Inspect the underlying Java exception and verify Java/Spark compatibility. |
+| Spark session fails to start | Restart VS Code or the Jupyter kernel after changing Java environment variables. |
+| Python / PySpark compatibility error | Verify the supported Python versions for your installed PySpark release. |
+
+> **Important:** These exercises run locally using Spark's local execution mode. A Databricks workspace, Hadoop cluster, or separate Spark cluster is not required.
+
 ## Quick start (macOS / Linux)
 
 Open a terminal in the repository root:
