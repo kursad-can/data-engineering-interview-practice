@@ -1,0 +1,301 @@
+log_id,pipeline,level,duration_ms,timestamp,message
+1,events_stream,INFO,4019,2026-05-24T02:26:09Z,Schema validation passed
+2,orders_ingest,INFO,7905,2026-04-20T20:24:07Z,Batch completed successfully
+3,orders_ingest,INFO,10292,2026-04-07T21:25:30Z,Watermark advanced
+4,events_stream,INFO,6294,2026-04-02T16:14:25Z,Checkpoint committed
+5,customer_sync,INFO,1416,2026-06-02T12:24:40Z,Incremental load completed
+6,orders_ingest,ERROR,42411,2026-04-16T01:38:04Z,Delta write failed due to conflict
+7,orders_ingest,ERROR,32610,2026-04-23T11:19:56Z,Schema mismatch: unexpected column
+8,customer_sync,INFO,11206,2026-06-05T09:22:00Z,Batch completed successfully
+9,events_stream,INFO,8961,2026-04-08T02:35:43Z,"Processed 18,432 records"
+10,customer_sync,INFO,11268,2026-04-30T05:26:10Z,Incremental load completed
+11,events_stream,WARN,11115,2026-05-16T20:12:59Z,Data quality threshold approaching
+12,orders_ingest,ERROR,42536,2026-06-03T23:31:58Z,Dead-letter queue threshold exceeded
+13,customer_sync,INFO,8894,2026-05-27T12:47:23Z,"Processed 18,432 records"
+14,orders_ingest,INFO,10486,2026-05-21T17:46:30Z,Checkpoint committed
+15,events_stream,INFO,964,2026-05-05T18:00:05Z,Batch completed successfully
+16,orders_ingest,INFO,5125,2026-05-04T17:47:38Z,Watermark advanced
+17,events_stream,INFO,4585,2026-05-31T18:35:28Z,Batch completed successfully
+18,customer_sync,WARN,10690,2026-04-28T06:22:40Z,Data quality threshold approaching
+19,customer_sync,WARN,10774,2026-04-06T21:14:20Z,Source response latency increased
+20,customer_sync,INFO,2232,2026-04-30T20:52:12Z,Batch completed successfully
+21,orders_ingest,INFO,10987,2026-05-26T14:33:50Z,Schema validation passed
+22,events_stream,WARN,6496,2026-05-12T18:56:42Z,Data quality threshold approaching
+23,events_stream,WARN,2645,2026-04-03T08:42:56Z,Retry scheduled after transient failure
+24,customer_sync,WARN,8077,2026-04-17T13:17:16Z,Retry scheduled after transient failure
+25,events_stream,INFO,9811,2026-05-04T03:35:13Z,Watermark advanced
+26,customer_sync,INFO,4380,2026-04-04T22:21:54Z,Batch completed successfully
+27,events_stream,INFO,3167,2026-05-16T01:33:22Z,Batch completed successfully
+28,orders_ingest,INFO,1805,2026-05-21T00:53:41Z,Schema validation passed
+29,customer_sync,WARN,7179,2026-05-17T15:02:45Z,Source response latency increased
+30,customer_sync,INFO,3544,2026-05-12T10:48:33Z,Schema validation passed
+31,orders_ingest,INFO,11119,2026-04-09T21:32:09Z,Batch completed successfully
+32,orders_ingest,INFO,436,2026-04-12T05:58:26Z,Checkpoint committed
+33,customer_sync,INFO,4020,2026-05-15T00:19:11Z,Watermark advanced
+34,orders_ingest,WARN,528,2026-04-05T05:21:27Z,Source response latency increased
+35,orders_ingest,INFO,2851,2026-05-03T10:03:55Z,"Processed 18,432 records"
+36,customer_sync,ERROR,10544,2026-04-29T03:30:48Z,Null primary key validation failed
+37,orders_ingest,INFO,10617,2026-04-18T15:22:50Z,Batch completed successfully
+38,events_stream,ERROR,40228,2026-05-16T18:33:52Z,Dead-letter queue threshold exceeded
+39,events_stream,INFO,6611,2026-05-28T21:39:43Z,"Processed 18,432 records"
+40,customer_sync,INFO,10220,2026-06-06T18:35:12Z,Checkpoint committed
+41,events_stream,INFO,10598,2026-05-23T11:09:42Z,Schema validation passed
+42,events_stream,INFO,9148,2026-05-14T05:15:19Z,Schema validation passed
+43,events_stream,ERROR,41364,2026-04-29T19:55:18Z,Dead-letter queue threshold exceeded
+44,customer_sync,INFO,11501,2026-05-17T02:31:02Z,"Processed 18,432 records"
+45,customer_sync,INFO,760,2026-04-08T13:45:24Z,Checkpoint committed
+46,events_stream,INFO,1055,2026-05-15T20:25:26Z,Batch completed successfully
+47,customer_sync,INFO,11997,2026-04-14T01:26:32Z,"Processed 18,432 records"
+48,customer_sync,INFO,5548,2026-04-20T10:11:44Z,Batch completed successfully
+49,events_stream,INFO,4700,2026-04-08T03:20:18Z,Watermark advanced
+50,orders_ingest,WARN,10466,2026-05-13T19:41:55Z,Small-file count above threshold
+51,customer_sync,INFO,246,2026-05-03T22:19:37Z,Watermark advanced
+52,customer_sync,WARN,4367,2026-05-03T03:41:39Z,Source response latency increased
+53,orders_ingest,WARN,6659,2026-04-15T16:10:08Z,Late-arriving records detected
+54,customer_sync,INFO,2734,2026-05-10T13:34:58Z,Schema validation passed
+55,customer_sync,INFO,9202,2026-05-18T21:08:08Z,Incremental load completed
+56,orders_ingest,WARN,5126,2026-06-04T15:40:41Z,Data quality threshold approaching
+57,customer_sync,WARN,9647,2026-05-22T21:48:10Z,Source response latency increased
+58,orders_ingest,INFO,6658,2026-05-19T04:04:50Z,Batch completed successfully
+59,orders_ingest,INFO,632,2026-06-08T16:17:22Z,"Processed 18,432 records"
+60,customer_sync,INFO,8952,2026-05-27T14:55:32Z,Incremental load completed
+61,events_stream,INFO,724,2026-04-18T00:44:02Z,"Processed 18,432 records"
+62,customer_sync,INFO,11889,2026-05-17T21:41:05Z,Schema validation passed
+63,orders_ingest,INFO,3814,2026-06-02T19:25:52Z,"Processed 18,432 records"
+64,orders_ingest,INFO,1681,2026-04-05T23:48:06Z,Incremental load completed
+65,orders_ingest,INFO,4328,2026-04-07T17:23:48Z,Checkpoint committed
+66,events_stream,INFO,11965,2026-05-31T16:29:45Z,Checkpoint committed
+67,orders_ingest,INFO,1367,2026-05-03T04:01:41Z,Batch completed successfully
+68,events_stream,WARN,10453,2026-04-28T03:46:32Z,Small-file count above threshold
+69,events_stream,INFO,2871,2026-05-09T01:43:40Z,Checkpoint committed
+70,orders_ingest,INFO,3068,2026-06-07T19:49:24Z,"Processed 18,432 records"
+71,orders_ingest,INFO,1213,2026-06-05T15:55:24Z,"Processed 18,432 records"
+72,orders_ingest,INFO,1762,2026-04-08T15:05:11Z,Schema validation passed
+73,customer_sync,INFO,1418,2026-04-02T22:04:31Z,Incremental load completed
+74,orders_ingest,INFO,2380,2026-04-07T01:10:43Z,Schema validation passed
+75,orders_ingest,WARN,11435,2026-05-26T19:41:08Z,Small-file count above threshold
+76,events_stream,WARN,7868,2026-04-27T18:22:07Z,Small-file count above threshold
+77,events_stream,WARN,666,2026-05-12T03:26:29Z,Source response latency increased
+78,customer_sync,INFO,10913,2026-04-02T00:15:23Z,Checkpoint committed
+79,orders_ingest,INFO,8267,2026-04-01T09:24:16Z,Schema validation passed
+80,orders_ingest,INFO,7904,2026-05-28T16:32:14Z,Schema validation passed
+81,events_stream,INFO,11559,2026-04-30T23:23:00Z,Batch completed successfully
+82,customer_sync,WARN,8820,2026-04-17T00:02:24Z,Source response latency increased
+83,events_stream,WARN,4972,2026-05-27T23:44:25Z,Retry scheduled after transient failure
+84,orders_ingest,INFO,1040,2026-04-16T18:18:24Z,Watermark advanced
+85,events_stream,INFO,10266,2026-05-26T16:34:51Z,Batch completed successfully
+86,events_stream,INFO,8652,2026-04-15T00:26:23Z,Incremental load completed
+87,orders_ingest,INFO,6921,2026-05-20T17:28:58Z,Watermark advanced
+88,orders_ingest,INFO,7675,2026-05-21T14:37:59Z,Schema validation passed
+89,orders_ingest,INFO,4224,2026-04-17T16:17:52Z,Schema validation passed
+90,events_stream,INFO,6806,2026-05-17T12:01:15Z,Incremental load completed
+91,orders_ingest,INFO,11571,2026-05-29T00:59:57Z,"Processed 18,432 records"
+92,orders_ingest,WARN,4626,2026-04-11T19:53:43Z,Source response latency increased
+93,events_stream,INFO,7260,2026-05-26T22:37:05Z,Watermark advanced
+94,orders_ingest,INFO,8509,2026-04-03T13:04:50Z,Watermark advanced
+95,events_stream,INFO,2314,2026-05-29T14:11:13Z,Checkpoint committed
+96,orders_ingest,INFO,5751,2026-05-06T04:25:39Z,Schema validation passed
+97,customer_sync,WARN,7346,2026-05-29T14:35:35Z,Small-file count above threshold
+98,customer_sync,INFO,2138,2026-05-03T01:11:31Z,"Processed 18,432 records"
+99,orders_ingest,ERROR,30869,2026-04-14T01:34:53Z,Delta write failed due to conflict
+100,events_stream,WARN,2653,2026-05-03T23:35:53Z,Source response latency increased
+101,events_stream,INFO,6335,2026-05-29T12:57:18Z,Schema validation passed
+102,customer_sync,INFO,409,2026-05-24T19:17:38Z,"Processed 18,432 records"
+103,customer_sync,INFO,1555,2026-05-02T15:12:33Z,Checkpoint committed
+104,customer_sync,INFO,10306,2026-04-16T03:14:12Z,"Processed 18,432 records"
+105,customer_sync,INFO,8815,2026-06-08T05:57:56Z,Checkpoint committed
+106,events_stream,INFO,7458,2026-04-11T20:37:24Z,Schema validation passed
+107,orders_ingest,WARN,4119,2026-04-18T06:45:51Z,Small-file count above threshold
+108,orders_ingest,ERROR,17728,2026-04-08T02:40:20Z,Delta write failed due to conflict
+109,orders_ingest,INFO,6431,2026-06-08T23:28:38Z,Incremental load completed
+110,orders_ingest,ERROR,30430,2026-06-01T21:42:25Z,Schema mismatch: unexpected column
+111,orders_ingest,INFO,5169,2026-05-23T17:11:25Z,"Processed 18,432 records"
+112,events_stream,WARN,3419,2026-06-05T14:32:05Z,Source response latency increased
+113,customer_sync,INFO,671,2026-05-05T03:56:15Z,"Processed 18,432 records"
+114,events_stream,INFO,11384,2026-05-04T21:53:02Z,Checkpoint committed
+115,orders_ingest,INFO,1181,2026-05-04T07:45:14Z,Batch completed successfully
+116,customer_sync,INFO,393,2026-06-04T11:45:01Z,Watermark advanced
+117,customer_sync,INFO,9252,2026-04-14T18:10:54Z,Watermark advanced
+118,customer_sync,INFO,10334,2026-05-23T21:39:57Z,Incremental load completed
+119,orders_ingest,INFO,7910,2026-04-16T10:04:42Z,Checkpoint committed
+120,customer_sync,INFO,11012,2026-04-09T06:12:53Z,Batch completed successfully
+121,customer_sync,INFO,7502,2026-04-05T21:00:42Z,Batch completed successfully
+122,orders_ingest,INFO,11554,2026-05-24T05:03:30Z,Checkpoint committed
+123,orders_ingest,INFO,10915,2026-04-10T23:46:11Z,Checkpoint committed
+124,orders_ingest,INFO,6304,2026-05-19T14:27:03Z,Schema validation passed
+125,orders_ingest,INFO,840,2026-06-04T07:45:46Z,Batch completed successfully
+126,orders_ingest,ERROR,1272,2026-06-03T06:14:18Z,Schema mismatch: unexpected column
+127,events_stream,INFO,5427,2026-05-24T15:23:16Z,Watermark advanced
+128,customer_sync,INFO,10838,2026-04-15T01:05:31Z,Watermark advanced
+129,customer_sync,WARN,11781,2026-06-02T15:05:56Z,Late-arriving records detected
+130,events_stream,INFO,9515,2026-05-20T05:37:56Z,"Processed 18,432 records"
+131,customer_sync,INFO,7121,2026-04-11T05:26:59Z,Schema validation passed
+132,customer_sync,WARN,4058,2026-06-04T07:35:26Z,Data quality threshold approaching
+133,orders_ingest,INFO,4617,2026-05-21T00:22:38Z,Checkpoint committed
+134,events_stream,WARN,2680,2026-04-14T23:36:46Z,Small-file count above threshold
+135,customer_sync,INFO,848,2026-04-15T09:41:38Z,Schema validation passed
+136,events_stream,WARN,10898,2026-04-30T08:35:21Z,Late-arriving records detected
+137,orders_ingest,INFO,11833,2026-04-16T15:04:13Z,Watermark advanced
+138,customer_sync,WARN,8065,2026-04-16T00:27:44Z,Small-file count above threshold
+139,events_stream,INFO,6052,2026-05-08T17:04:14Z,Incremental load completed
+140,events_stream,INFO,4605,2026-05-18T23:04:00Z,Schema validation passed
+141,orders_ingest,INFO,8532,2026-04-17T00:17:24Z,Schema validation passed
+142,customer_sync,INFO,1109,2026-04-09T06:38:02Z,Watermark advanced
+143,events_stream,WARN,4464,2026-04-04T11:22:48Z,Source response latency increased
+144,events_stream,ERROR,11921,2026-05-02T01:20:55Z,Dead-letter queue threshold exceeded
+145,customer_sync,INFO,4055,2026-05-27T09:57:38Z,Watermark advanced
+146,orders_ingest,INFO,9907,2026-05-10T22:24:49Z,Schema validation passed
+147,customer_sync,INFO,10363,2026-04-17T04:48:47Z,Schema validation passed
+148,customer_sync,INFO,981,2026-05-19T11:35:25Z,Checkpoint committed
+149,events_stream,INFO,9844,2026-04-08T10:13:22Z,Batch completed successfully
+150,events_stream,INFO,1473,2026-05-12T01:22:19Z,"Processed 18,432 records"
+151,orders_ingest,INFO,5180,2026-04-27T20:30:36Z,Watermark advanced
+152,orders_ingest,INFO,404,2026-05-07T13:51:49Z,Incremental load completed
+153,customer_sync,INFO,8782,2026-05-28T01:23:41Z,Checkpoint committed
+154,customer_sync,INFO,4051,2026-05-04T08:52:24Z,Incremental load completed
+155,orders_ingest,INFO,1970,2026-05-18T23:44:44Z,Checkpoint committed
+156,customer_sync,INFO,7731,2026-04-07T18:23:34Z,Watermark advanced
+157,events_stream,INFO,2135,2026-05-31T13:11:43Z,Batch completed successfully
+158,customer_sync,INFO,5833,2026-04-11T16:06:42Z,Watermark advanced
+159,events_stream,INFO,2660,2026-04-24T17:51:18Z,Schema validation passed
+160,orders_ingest,WARN,9925,2026-04-20T21:33:47Z,Data quality threshold approaching
+161,events_stream,INFO,3254,2026-05-13T14:52:11Z,Incremental load completed
+162,orders_ingest,WARN,8614,2026-04-29T04:38:10Z,Source response latency increased
+163,events_stream,INFO,6909,2026-05-11T08:53:46Z,Batch completed successfully
+164,events_stream,INFO,2244,2026-05-05T01:57:38Z,"Processed 18,432 records"
+165,customer_sync,INFO,9571,2026-04-17T08:12:18Z,Batch completed successfully
+166,orders_ingest,WARN,11222,2026-05-19T15:16:36Z,Source response latency increased
+167,customer_sync,INFO,8959,2026-05-24T06:52:07Z,"Processed 18,432 records"
+168,orders_ingest,INFO,6929,2026-05-31T21:25:59Z,Incremental load completed
+169,orders_ingest,INFO,9454,2026-05-12T07:47:25Z,Incremental load completed
+170,orders_ingest,INFO,278,2026-05-09T23:21:10Z,Batch completed successfully
+171,orders_ingest,WARN,2794,2026-05-09T18:02:00Z,Retry scheduled after transient failure
+172,events_stream,INFO,10199,2026-05-02T22:31:21Z,Batch completed successfully
+173,events_stream,INFO,3430,2026-05-15T04:48:37Z,Schema validation passed
+174,events_stream,INFO,6091,2026-04-12T08:59:29Z,Incremental load completed
+175,orders_ingest,WARN,9066,2026-04-17T16:12:33Z,Late-arriving records detected
+176,events_stream,WARN,5399,2026-04-17T15:11:44Z,Retry scheduled after transient failure
+177,orders_ingest,ERROR,44514,2026-05-17T14:56:59Z,Dead-letter queue threshold exceeded
+178,customer_sync,INFO,329,2026-05-07T11:21:26Z,Incremental load completed
+179,customer_sync,INFO,1099,2026-04-14T20:51:49Z,Batch completed successfully
+180,customer_sync,INFO,1405,2026-04-24T00:19:30Z,Watermark advanced
+181,customer_sync,INFO,3683,2026-05-08T04:33:19Z,Schema validation passed
+182,customer_sync,ERROR,34561,2026-06-02T13:47:48Z,Dead-letter queue threshold exceeded
+183,events_stream,WARN,2595,2026-04-18T17:43:29Z,Late-arriving records detected
+184,orders_ingest,INFO,11630,2026-04-13T21:28:50Z,Watermark advanced
+185,customer_sync,ERROR,36440,2026-05-29T02:50:36Z,Null primary key validation failed
+186,orders_ingest,INFO,5371,2026-05-02T07:08:09Z,Incremental load completed
+187,orders_ingest,WARN,1044,2026-04-26T17:14:26Z,Retry scheduled after transient failure
+188,customer_sync,INFO,10915,2026-05-28T02:00:42Z,Incremental load completed
+189,customer_sync,INFO,11450,2026-05-02T12:40:12Z,Schema validation passed
+190,orders_ingest,INFO,5129,2026-04-28T13:06:59Z,Watermark advanced
+191,customer_sync,INFO,10472,2026-06-07T04:54:25Z,Schema validation passed
+192,events_stream,INFO,8061,2026-05-17T13:45:20Z,Watermark advanced
+193,orders_ingest,INFO,9877,2026-05-20T06:17:01Z,Batch completed successfully
+194,orders_ingest,WARN,4495,2026-06-07T22:30:55Z,Source response latency increased
+195,orders_ingest,INFO,8823,2026-04-06T04:49:59Z,"Processed 18,432 records"
+196,events_stream,INFO,5406,2026-04-10T10:22:15Z,Checkpoint committed
+197,customer_sync,INFO,10163,2026-05-23T17:39:20Z,Checkpoint committed
+198,orders_ingest,INFO,685,2026-04-26T11:32:03Z,Batch completed successfully
+199,customer_sync,INFO,4290,2026-05-16T07:52:32Z,"Processed 18,432 records"
+200,customer_sync,INFO,7325,2026-05-28T02:31:04Z,Watermark advanced
+201,events_stream,INFO,10550,2026-04-12T19:46:28Z,Batch completed successfully
+202,customer_sync,WARN,11454,2026-05-04T03:52:56Z,Late-arriving records detected
+203,orders_ingest,INFO,1903,2026-04-13T08:24:44Z,Watermark advanced
+204,orders_ingest,INFO,2584,2026-05-09T03:05:10Z,Checkpoint committed
+205,events_stream,INFO,4645,2026-06-09T03:15:00Z,Schema validation passed
+206,customer_sync,INFO,3213,2026-04-05T01:52:35Z,Incremental load completed
+207,orders_ingest,WARN,2413,2026-04-27T18:43:38Z,Data quality threshold approaching
+208,customer_sync,INFO,2280,2026-06-09T03:04:03Z,Watermark advanced
+209,orders_ingest,INFO,271,2026-06-08T17:39:07Z,Schema validation passed
+210,customer_sync,INFO,290,2026-05-25T10:48:30Z,Checkpoint committed
+211,customer_sync,ERROR,29769,2026-05-07T07:27:10Z,Null primary key validation failed
+212,orders_ingest,INFO,1148,2026-04-27T08:44:35Z,Schema validation passed
+213,orders_ingest,INFO,9625,2026-05-09T03:41:56Z,Watermark advanced
+214,orders_ingest,INFO,672,2026-05-23T04:04:12Z,Schema validation passed
+215,events_stream,INFO,9503,2026-05-21T23:09:56Z,Checkpoint committed
+216,events_stream,WARN,9180,2026-04-19T08:18:30Z,Data quality threshold approaching
+217,events_stream,INFO,7986,2026-06-08T17:25:37Z,Checkpoint committed
+218,events_stream,INFO,552,2026-05-14T20:52:48Z,Checkpoint committed
+219,orders_ingest,INFO,4382,2026-05-16T22:21:11Z,Schema validation passed
+220,customer_sync,INFO,11439,2026-05-12T01:02:00Z,Batch completed successfully
+221,orders_ingest,WARN,4809,2026-04-22T15:35:08Z,Small-file count above threshold
+222,customer_sync,INFO,10685,2026-06-07T05:16:23Z,Batch completed successfully
+223,events_stream,WARN,9587,2026-06-04T13:25:28Z,Retry scheduled after transient failure
+224,customer_sync,ERROR,37513,2026-04-01T01:18:53Z,Schema mismatch: unexpected column
+225,events_stream,INFO,9693,2026-06-01T20:42:30Z,Schema validation passed
+226,customer_sync,INFO,9439,2026-04-08T15:29:03Z,Schema validation passed
+227,orders_ingest,INFO,8106,2026-05-04T20:20:40Z,Watermark advanced
+228,customer_sync,ERROR,12385,2026-04-06T09:38:41Z,Connection timeout to source API
+229,customer_sync,INFO,231,2026-06-01T23:31:56Z,Batch completed successfully
+230,customer_sync,INFO,403,2026-05-29T12:29:03Z,Incremental load completed
+231,customer_sync,INFO,6334,2026-04-20T07:20:01Z,Batch completed successfully
+232,events_stream,INFO,11746,2026-05-30T23:28:24Z,Checkpoint committed
+233,orders_ingest,INFO,2260,2026-04-25T15:46:16Z,Watermark advanced
+234,events_stream,ERROR,16923,2026-05-07T18:37:57Z,Schema mismatch: unexpected column
+235,customer_sync,INFO,9112,2026-04-22T04:59:06Z,Checkpoint committed
+236,events_stream,INFO,1235,2026-04-23T10:49:43Z,Batch completed successfully
+237,orders_ingest,WARN,11705,2026-05-31T20:35:37Z,Small-file count above threshold
+238,events_stream,INFO,5266,2026-05-30T11:39:32Z,Batch completed successfully
+239,events_stream,INFO,3263,2026-05-06T09:16:36Z,Schema validation passed
+240,orders_ingest,INFO,1291,2026-05-21T00:06:15Z,Schema validation passed
+241,events_stream,INFO,8158,2026-04-05T09:13:17Z,Schema validation passed
+242,customer_sync,WARN,11316,2026-04-28T00:23:06Z,Small-file count above threshold
+243,customer_sync,INFO,8426,2026-05-12T11:58:57Z,Batch completed successfully
+244,orders_ingest,INFO,5495,2026-04-18T12:01:16Z,"Processed 18,432 records"
+245,orders_ingest,INFO,8240,2026-05-08T15:48:45Z,Incremental load completed
+246,orders_ingest,INFO,1332,2026-04-09T15:48:51Z,Schema validation passed
+247,customer_sync,INFO,30,2026-04-03T03:20:22Z,Schema validation passed
+248,orders_ingest,INFO,8379,2026-05-22T03:52:05Z,Schema validation passed
+249,orders_ingest,INFO,4109,2026-04-30T21:00:34Z,"Processed 18,432 records"
+250,customer_sync,WARN,6571,2026-05-28T16:32:25Z,Retry scheduled after transient failure
+251,events_stream,INFO,9279,2026-05-06T05:16:15Z,Checkpoint committed
+252,events_stream,ERROR,24879,2026-05-10T16:26:14Z,Null primary key validation failed
+253,events_stream,INFO,5774,2026-04-08T06:25:25Z,Checkpoint committed
+254,customer_sync,INFO,6132,2026-04-16T22:37:44Z,Checkpoint committed
+255,orders_ingest,ERROR,26694,2026-04-02T13:24:34Z,Schema mismatch: unexpected column
+256,customer_sync,INFO,6009,2026-04-30T11:29:41Z,Checkpoint committed
+257,customer_sync,INFO,8449,2026-05-17T21:05:56Z,Schema validation passed
+258,customer_sync,INFO,4316,2026-06-08T22:32:42Z,"Processed 18,432 records"
+259,customer_sync,INFO,10694,2026-05-21T00:37:12Z,Checkpoint committed
+260,events_stream,ERROR,13397,2026-05-20T15:24:50Z,Delta write failed due to conflict
+261,customer_sync,INFO,7893,2026-04-21T21:08:57Z,Schema validation passed
+262,events_stream,INFO,6674,2026-04-21T15:56:42Z,Watermark advanced
+263,customer_sync,INFO,1868,2026-05-10T08:14:53Z,Watermark advanced
+264,orders_ingest,INFO,11631,2026-04-25T06:45:11Z,"Processed 18,432 records"
+265,customer_sync,ERROR,8037,2026-04-11T08:44:26Z,Connection timeout to source API
+266,events_stream,INFO,10350,2026-06-06T01:24:07Z,Checkpoint committed
+267,orders_ingest,INFO,5167,2026-05-31T12:19:51Z,Batch completed successfully
+268,orders_ingest,INFO,9923,2026-05-08T04:01:28Z,Batch completed successfully
+269,orders_ingest,ERROR,16977,2026-05-04T16:13:24Z,Connection timeout to source API
+270,customer_sync,INFO,11432,2026-05-19T03:35:15Z,Batch completed successfully
+271,customer_sync,INFO,2244,2026-05-11T03:23:54Z,"Processed 18,432 records"
+272,events_stream,INFO,3541,2026-04-07T06:17:30Z,Checkpoint committed
+273,customer_sync,INFO,6676,2026-05-23T15:42:01Z,Checkpoint committed
+274,events_stream,INFO,1803,2026-05-27T05:07:05Z,Watermark advanced
+275,orders_ingest,WARN,10161,2026-05-25T10:41:01Z,Small-file count above threshold
+276,events_stream,INFO,9795,2026-05-09T01:31:49Z,Batch completed successfully
+277,customer_sync,INFO,6136,2026-04-01T11:37:35Z,Batch completed successfully
+278,events_stream,INFO,2776,2026-04-22T01:39:07Z,"Processed 18,432 records"
+279,orders_ingest,INFO,11821,2026-04-10T16:46:18Z,Schema validation passed
+280,customer_sync,INFO,11602,2026-04-09T20:52:18Z,Watermark advanced
+281,orders_ingest,INFO,3741,2026-04-01T02:36:21Z,Watermark advanced
+282,orders_ingest,INFO,8720,2026-05-27T14:05:26Z,Watermark advanced
+283,events_stream,INFO,3061,2026-04-03T13:14:45Z,Batch completed successfully
+284,orders_ingest,WARN,7934,2026-05-22T17:33:52Z,Source response latency increased
+285,orders_ingest,ERROR,41890,2026-04-25T05:33:14Z,Delta write failed due to conflict
+286,orders_ingest,INFO,3898,2026-04-21T23:39:08Z,Schema validation passed
+287,orders_ingest,INFO,4885,2026-04-10T14:59:44Z,Incremental load completed
+288,orders_ingest,INFO,10046,2026-05-31T20:34:22Z,"Processed 18,432 records"
+289,orders_ingest,INFO,4957,2026-05-27T19:41:40Z,Watermark advanced
+290,events_stream,INFO,2244,2026-04-12T05:38:43Z,Incremental load completed
+291,events_stream,INFO,11249,2026-05-02T13:01:14Z,"Processed 18,432 records"
+292,customer_sync,INFO,2752,2026-05-29T07:55:55Z,Batch completed successfully
+293,customer_sync,INFO,1370,2026-06-07T17:23:10Z,Watermark advanced
+294,orders_ingest,INFO,9677,2026-04-28T01:52:19Z,Checkpoint committed
+295,customer_sync,INFO,9205,2026-05-24T19:13:35Z,Batch completed successfully
+296,orders_ingest,INFO,9246,2026-04-15T18:12:55Z,"Processed 18,432 records"
+297,customer_sync,INFO,9606,2026-05-30T22:32:41Z,Checkpoint committed
+298,events_stream,INFO,4155,2026-05-06T07:57:19Z,Watermark advanced
+299,events_stream,INFO,5060,2026-05-11T04:56:52Z,Incremental load completed
+300,customer_sync,INFO,1157,2026-04-01T23:45:05Z,Schema validation passed

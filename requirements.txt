@@ -1,0 +1,13 @@
+# PostgreSQL
+psycopg2-binary
+
+# Data manipulation
+pandas
+numpy
+
+# PySpark
+pyspark
+
+# Jupyter / VS Code notebook support
+ipykernel
+jupyter

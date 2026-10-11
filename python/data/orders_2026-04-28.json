@@ -1,0 +1,1 @@
+[{"order_id": 105, "customer_id": 110, "order_date": "2026-04-28", "status": "completed", "amount": 1000.33}, {"order_id": 240, "customer_id": 52, "order_date": "2026-04-28", "status": "completed", "amount": 907.88}, {"order_id": 473, "customer_id": 93, "order_date": "2026-04-28", "status": "pending", "amount": 350.96}]

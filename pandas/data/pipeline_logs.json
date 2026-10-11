@@ -1,0 +1,2402 @@
+[
+  {
+    "log_id": 1,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 4019,
+    "timestamp": "2026-05-24T02:26:09Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 2,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 7905,
+    "timestamp": "2026-04-20T20:24:07Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 3,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 10292,
+    "timestamp": "2026-04-07T21:25:30Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 4,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6294,
+    "timestamp": "2026-04-02T16:14:25Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 5,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1416,
+    "timestamp": "2026-06-02T12:24:40Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 6,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 42411,
+    "timestamp": "2026-04-16T01:38:04Z",
+    "message": "Delta write failed due to conflict"
+  },
+  {
+    "log_id": 7,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 32610,
+    "timestamp": "2026-04-23T11:19:56Z",
+    "message": "Schema mismatch: unexpected column"
+  },
+  {
+    "log_id": 8,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11206,
+    "timestamp": "2026-06-05T09:22:00Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 9,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 8961,
+    "timestamp": "2026-04-08T02:35:43Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 10,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11268,
+    "timestamp": "2026-04-30T05:26:10Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 11,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 11115,
+    "timestamp": "2026-05-16T20:12:59Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 12,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 42536,
+    "timestamp": "2026-06-03T23:31:58Z",
+    "message": "Dead-letter queue threshold exceeded"
+  },
+  {
+    "log_id": 13,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 8894,
+    "timestamp": "2026-05-27T12:47:23Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 14,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 10486,
+    "timestamp": "2026-05-21T17:46:30Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 15,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 964,
+    "timestamp": "2026-05-05T18:00:05Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 16,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5125,
+    "timestamp": "2026-05-04T17:47:38Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 17,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 4585,
+    "timestamp": "2026-05-31T18:35:28Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 18,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 10690,
+    "timestamp": "2026-04-28T06:22:40Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 19,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 10774,
+    "timestamp": "2026-04-06T21:14:20Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 20,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 2232,
+    "timestamp": "2026-04-30T20:52:12Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 21,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 10987,
+    "timestamp": "2026-05-26T14:33:50Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 22,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 6496,
+    "timestamp": "2026-05-12T18:56:42Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 23,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 2645,
+    "timestamp": "2026-04-03T08:42:56Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 24,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 8077,
+    "timestamp": "2026-04-17T13:17:16Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 25,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9811,
+    "timestamp": "2026-05-04T03:35:13Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 26,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 4380,
+    "timestamp": "2026-04-04T22:21:54Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 27,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 3167,
+    "timestamp": "2026-05-16T01:33:22Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 28,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1805,
+    "timestamp": "2026-05-21T00:53:41Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 29,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 7179,
+    "timestamp": "2026-05-17T15:02:45Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 30,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 3544,
+    "timestamp": "2026-05-12T10:48:33Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 31,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 11119,
+    "timestamp": "2026-04-09T21:32:09Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 32,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 436,
+    "timestamp": "2026-04-12T05:58:26Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 33,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 4020,
+    "timestamp": "2026-05-15T00:19:11Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 34,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 528,
+    "timestamp": "2026-04-05T05:21:27Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 35,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 2851,
+    "timestamp": "2026-05-03T10:03:55Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 36,
+    "pipeline": "customer_sync",
+    "level": "ERROR",
+    "duration_ms": 10544,
+    "timestamp": "2026-04-29T03:30:48Z",
+    "message": "Null primary key validation failed"
+  },
+  {
+    "log_id": 37,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 10617,
+    "timestamp": "2026-04-18T15:22:50Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 38,
+    "pipeline": "events_stream",
+    "level": "ERROR",
+    "duration_ms": 40228,
+    "timestamp": "2026-05-16T18:33:52Z",
+    "message": "Dead-letter queue threshold exceeded"
+  },
+  {
+    "log_id": 39,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6611,
+    "timestamp": "2026-05-28T21:39:43Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 40,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10220,
+    "timestamp": "2026-06-06T18:35:12Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 41,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 10598,
+    "timestamp": "2026-05-23T11:09:42Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 42,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9148,
+    "timestamp": "2026-05-14T05:15:19Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 43,
+    "pipeline": "events_stream",
+    "level": "ERROR",
+    "duration_ms": 41364,
+    "timestamp": "2026-04-29T19:55:18Z",
+    "message": "Dead-letter queue threshold exceeded"
+  },
+  {
+    "log_id": 44,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11501,
+    "timestamp": "2026-05-17T02:31:02Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 45,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 760,
+    "timestamp": "2026-04-08T13:45:24Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 46,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 1055,
+    "timestamp": "2026-05-15T20:25:26Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 47,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11997,
+    "timestamp": "2026-04-14T01:26:32Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 48,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 5548,
+    "timestamp": "2026-04-20T10:11:44Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 49,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 4700,
+    "timestamp": "2026-04-08T03:20:18Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 50,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 10466,
+    "timestamp": "2026-05-13T19:41:55Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 51,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 246,
+    "timestamp": "2026-05-03T22:19:37Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 52,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 4367,
+    "timestamp": "2026-05-03T03:41:39Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 53,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 6659,
+    "timestamp": "2026-04-15T16:10:08Z",
+    "message": "Late-arriving records detected"
+  },
+  {
+    "log_id": 54,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 2734,
+    "timestamp": "2026-05-10T13:34:58Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 55,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 9202,
+    "timestamp": "2026-05-18T21:08:08Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 56,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 5126,
+    "timestamp": "2026-06-04T15:40:41Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 57,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 9647,
+    "timestamp": "2026-05-22T21:48:10Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 58,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 6658,
+    "timestamp": "2026-05-19T04:04:50Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 59,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 632,
+    "timestamp": "2026-06-08T16:17:22Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 60,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 8952,
+    "timestamp": "2026-05-27T14:55:32Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 61,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 724,
+    "timestamp": "2026-04-18T00:44:02Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 62,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11889,
+    "timestamp": "2026-05-17T21:41:05Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 63,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 3814,
+    "timestamp": "2026-06-02T19:25:52Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 64,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1681,
+    "timestamp": "2026-04-05T23:48:06Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 65,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 4328,
+    "timestamp": "2026-04-07T17:23:48Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 66,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 11965,
+    "timestamp": "2026-05-31T16:29:45Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 67,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1367,
+    "timestamp": "2026-05-03T04:01:41Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 68,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 10453,
+    "timestamp": "2026-04-28T03:46:32Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 69,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 2871,
+    "timestamp": "2026-05-09T01:43:40Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 70,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 3068,
+    "timestamp": "2026-06-07T19:49:24Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 71,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1213,
+    "timestamp": "2026-06-05T15:55:24Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 72,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1762,
+    "timestamp": "2026-04-08T15:05:11Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 73,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1418,
+    "timestamp": "2026-04-02T22:04:31Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 74,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 2380,
+    "timestamp": "2026-04-07T01:10:43Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 75,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 11435,
+    "timestamp": "2026-05-26T19:41:08Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 76,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 7868,
+    "timestamp": "2026-04-27T18:22:07Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 77,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 666,
+    "timestamp": "2026-05-12T03:26:29Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 78,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10913,
+    "timestamp": "2026-04-02T00:15:23Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 79,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8267,
+    "timestamp": "2026-04-01T09:24:16Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 80,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 7904,
+    "timestamp": "2026-05-28T16:32:14Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 81,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 11559,
+    "timestamp": "2026-04-30T23:23:00Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 82,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 8820,
+    "timestamp": "2026-04-17T00:02:24Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 83,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 4972,
+    "timestamp": "2026-05-27T23:44:25Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 84,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1040,
+    "timestamp": "2026-04-16T18:18:24Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 85,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 10266,
+    "timestamp": "2026-05-26T16:34:51Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 86,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 8652,
+    "timestamp": "2026-04-15T00:26:23Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 87,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 6921,
+    "timestamp": "2026-05-20T17:28:58Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 88,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 7675,
+    "timestamp": "2026-05-21T14:37:59Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 89,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 4224,
+    "timestamp": "2026-04-17T16:17:52Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 90,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6806,
+    "timestamp": "2026-05-17T12:01:15Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 91,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 11571,
+    "timestamp": "2026-05-29T00:59:57Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 92,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 4626,
+    "timestamp": "2026-04-11T19:53:43Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 93,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 7260,
+    "timestamp": "2026-05-26T22:37:05Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 94,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8509,
+    "timestamp": "2026-04-03T13:04:50Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 95,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 2314,
+    "timestamp": "2026-05-29T14:11:13Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 96,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5751,
+    "timestamp": "2026-05-06T04:25:39Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 97,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 7346,
+    "timestamp": "2026-05-29T14:35:35Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 98,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 2138,
+    "timestamp": "2026-05-03T01:11:31Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 99,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 30869,
+    "timestamp": "2026-04-14T01:34:53Z",
+    "message": "Delta write failed due to conflict"
+  },
+  {
+    "log_id": 100,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 2653,
+    "timestamp": "2026-05-03T23:35:53Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 101,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6335,
+    "timestamp": "2026-05-29T12:57:18Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 102,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 409,
+    "timestamp": "2026-05-24T19:17:38Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 103,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1555,
+    "timestamp": "2026-05-02T15:12:33Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 104,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10306,
+    "timestamp": "2026-04-16T03:14:12Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 105,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 8815,
+    "timestamp": "2026-06-08T05:57:56Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 106,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 7458,
+    "timestamp": "2026-04-11T20:37:24Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 107,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 4119,
+    "timestamp": "2026-04-18T06:45:51Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 108,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 17728,
+    "timestamp": "2026-04-08T02:40:20Z",
+    "message": "Delta write failed due to conflict"
+  },
+  {
+    "log_id": 109,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 6431,
+    "timestamp": "2026-06-08T23:28:38Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 110,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 30430,
+    "timestamp": "2026-06-01T21:42:25Z",
+    "message": "Schema mismatch: unexpected column"
+  },
+  {
+    "log_id": 111,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5169,
+    "timestamp": "2026-05-23T17:11:25Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 112,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 3419,
+    "timestamp": "2026-06-05T14:32:05Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 113,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 671,
+    "timestamp": "2026-05-05T03:56:15Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 114,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 11384,
+    "timestamp": "2026-05-04T21:53:02Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 115,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1181,
+    "timestamp": "2026-05-04T07:45:14Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 116,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 393,
+    "timestamp": "2026-06-04T11:45:01Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 117,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 9252,
+    "timestamp": "2026-04-14T18:10:54Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 118,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10334,
+    "timestamp": "2026-05-23T21:39:57Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 119,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 7910,
+    "timestamp": "2026-04-16T10:04:42Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 120,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11012,
+    "timestamp": "2026-04-09T06:12:53Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 121,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 7502,
+    "timestamp": "2026-04-05T21:00:42Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 122,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 11554,
+    "timestamp": "2026-05-24T05:03:30Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 123,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 10915,
+    "timestamp": "2026-04-10T23:46:11Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 124,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 6304,
+    "timestamp": "2026-05-19T14:27:03Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 125,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 840,
+    "timestamp": "2026-06-04T07:45:46Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 126,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 1272,
+    "timestamp": "2026-06-03T06:14:18Z",
+    "message": "Schema mismatch: unexpected column"
+  },
+  {
+    "log_id": 127,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 5427,
+    "timestamp": "2026-05-24T15:23:16Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 128,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10838,
+    "timestamp": "2026-04-15T01:05:31Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 129,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 11781,
+    "timestamp": "2026-06-02T15:05:56Z",
+    "message": "Late-arriving records detected"
+  },
+  {
+    "log_id": 130,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9515,
+    "timestamp": "2026-05-20T05:37:56Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 131,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 7121,
+    "timestamp": "2026-04-11T05:26:59Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 132,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 4058,
+    "timestamp": "2026-06-04T07:35:26Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 133,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 4617,
+    "timestamp": "2026-05-21T00:22:38Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 134,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 2680,
+    "timestamp": "2026-04-14T23:36:46Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 135,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 848,
+    "timestamp": "2026-04-15T09:41:38Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 136,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 10898,
+    "timestamp": "2026-04-30T08:35:21Z",
+    "message": "Late-arriving records detected"
+  },
+  {
+    "log_id": 137,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 11833,
+    "timestamp": "2026-04-16T15:04:13Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 138,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 8065,
+    "timestamp": "2026-04-16T00:27:44Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 139,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6052,
+    "timestamp": "2026-05-08T17:04:14Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 140,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 4605,
+    "timestamp": "2026-05-18T23:04:00Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 141,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8532,
+    "timestamp": "2026-04-17T00:17:24Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 142,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1109,
+    "timestamp": "2026-04-09T06:38:02Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 143,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 4464,
+    "timestamp": "2026-04-04T11:22:48Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 144,
+    "pipeline": "events_stream",
+    "level": "ERROR",
+    "duration_ms": 11921,
+    "timestamp": "2026-05-02T01:20:55Z",
+    "message": "Dead-letter queue threshold exceeded"
+  },
+  {
+    "log_id": 145,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 4055,
+    "timestamp": "2026-05-27T09:57:38Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 146,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 9907,
+    "timestamp": "2026-05-10T22:24:49Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 147,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10363,
+    "timestamp": "2026-04-17T04:48:47Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 148,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 981,
+    "timestamp": "2026-05-19T11:35:25Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 149,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9844,
+    "timestamp": "2026-04-08T10:13:22Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 150,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 1473,
+    "timestamp": "2026-05-12T01:22:19Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 151,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5180,
+    "timestamp": "2026-04-27T20:30:36Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 152,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 404,
+    "timestamp": "2026-05-07T13:51:49Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 153,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 8782,
+    "timestamp": "2026-05-28T01:23:41Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 154,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 4051,
+    "timestamp": "2026-05-04T08:52:24Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 155,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1970,
+    "timestamp": "2026-05-18T23:44:44Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 156,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 7731,
+    "timestamp": "2026-04-07T18:23:34Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 157,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 2135,
+    "timestamp": "2026-05-31T13:11:43Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 158,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 5833,
+    "timestamp": "2026-04-11T16:06:42Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 159,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 2660,
+    "timestamp": "2026-04-24T17:51:18Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 160,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 9925,
+    "timestamp": "2026-04-20T21:33:47Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 161,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 3254,
+    "timestamp": "2026-05-13T14:52:11Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 162,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 8614,
+    "timestamp": "2026-04-29T04:38:10Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 163,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6909,
+    "timestamp": "2026-05-11T08:53:46Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 164,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 2244,
+    "timestamp": "2026-05-05T01:57:38Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 165,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 9571,
+    "timestamp": "2026-04-17T08:12:18Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 166,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 11222,
+    "timestamp": "2026-05-19T15:16:36Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 167,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 8959,
+    "timestamp": "2026-05-24T06:52:07Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 168,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 6929,
+    "timestamp": "2026-05-31T21:25:59Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 169,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 9454,
+    "timestamp": "2026-05-12T07:47:25Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 170,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 278,
+    "timestamp": "2026-05-09T23:21:10Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 171,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 2794,
+    "timestamp": "2026-05-09T18:02:00Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 172,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 10199,
+    "timestamp": "2026-05-02T22:31:21Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 173,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 3430,
+    "timestamp": "2026-05-15T04:48:37Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 174,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6091,
+    "timestamp": "2026-04-12T08:59:29Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 175,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 9066,
+    "timestamp": "2026-04-17T16:12:33Z",
+    "message": "Late-arriving records detected"
+  },
+  {
+    "log_id": 176,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 5399,
+    "timestamp": "2026-04-17T15:11:44Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 177,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 44514,
+    "timestamp": "2026-05-17T14:56:59Z",
+    "message": "Dead-letter queue threshold exceeded"
+  },
+  {
+    "log_id": 178,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 329,
+    "timestamp": "2026-05-07T11:21:26Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 179,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1099,
+    "timestamp": "2026-04-14T20:51:49Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 180,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1405,
+    "timestamp": "2026-04-24T00:19:30Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 181,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 3683,
+    "timestamp": "2026-05-08T04:33:19Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 182,
+    "pipeline": "customer_sync",
+    "level": "ERROR",
+    "duration_ms": 34561,
+    "timestamp": "2026-06-02T13:47:48Z",
+    "message": "Dead-letter queue threshold exceeded"
+  },
+  {
+    "log_id": 183,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 2595,
+    "timestamp": "2026-04-18T17:43:29Z",
+    "message": "Late-arriving records detected"
+  },
+  {
+    "log_id": 184,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 11630,
+    "timestamp": "2026-04-13T21:28:50Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 185,
+    "pipeline": "customer_sync",
+    "level": "ERROR",
+    "duration_ms": 36440,
+    "timestamp": "2026-05-29T02:50:36Z",
+    "message": "Null primary key validation failed"
+  },
+  {
+    "log_id": 186,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5371,
+    "timestamp": "2026-05-02T07:08:09Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 187,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 1044,
+    "timestamp": "2026-04-26T17:14:26Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 188,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10915,
+    "timestamp": "2026-05-28T02:00:42Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 189,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11450,
+    "timestamp": "2026-05-02T12:40:12Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 190,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5129,
+    "timestamp": "2026-04-28T13:06:59Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 191,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10472,
+    "timestamp": "2026-06-07T04:54:25Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 192,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 8061,
+    "timestamp": "2026-05-17T13:45:20Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 193,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 9877,
+    "timestamp": "2026-05-20T06:17:01Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 194,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 4495,
+    "timestamp": "2026-06-07T22:30:55Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 195,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8823,
+    "timestamp": "2026-04-06T04:49:59Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 196,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 5406,
+    "timestamp": "2026-04-10T10:22:15Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 197,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10163,
+    "timestamp": "2026-05-23T17:39:20Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 198,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 685,
+    "timestamp": "2026-04-26T11:32:03Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 199,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 4290,
+    "timestamp": "2026-05-16T07:52:32Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 200,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 7325,
+    "timestamp": "2026-05-28T02:31:04Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 201,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 10550,
+    "timestamp": "2026-04-12T19:46:28Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 202,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 11454,
+    "timestamp": "2026-05-04T03:52:56Z",
+    "message": "Late-arriving records detected"
+  },
+  {
+    "log_id": 203,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1903,
+    "timestamp": "2026-04-13T08:24:44Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 204,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 2584,
+    "timestamp": "2026-05-09T03:05:10Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 205,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 4645,
+    "timestamp": "2026-06-09T03:15:00Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 206,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 3213,
+    "timestamp": "2026-04-05T01:52:35Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 207,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 2413,
+    "timestamp": "2026-04-27T18:43:38Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 208,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 2280,
+    "timestamp": "2026-06-09T03:04:03Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 209,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 271,
+    "timestamp": "2026-06-08T17:39:07Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 210,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 290,
+    "timestamp": "2026-05-25T10:48:30Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 211,
+    "pipeline": "customer_sync",
+    "level": "ERROR",
+    "duration_ms": 29769,
+    "timestamp": "2026-05-07T07:27:10Z",
+    "message": "Null primary key validation failed"
+  },
+  {
+    "log_id": 212,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1148,
+    "timestamp": "2026-04-27T08:44:35Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 213,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 9625,
+    "timestamp": "2026-05-09T03:41:56Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 214,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 672,
+    "timestamp": "2026-05-23T04:04:12Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 215,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9503,
+    "timestamp": "2026-05-21T23:09:56Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 216,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 9180,
+    "timestamp": "2026-04-19T08:18:30Z",
+    "message": "Data quality threshold approaching"
+  },
+  {
+    "log_id": 217,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 7986,
+    "timestamp": "2026-06-08T17:25:37Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 218,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 552,
+    "timestamp": "2026-05-14T20:52:48Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 219,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 4382,
+    "timestamp": "2026-05-16T22:21:11Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 220,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11439,
+    "timestamp": "2026-05-12T01:02:00Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 221,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 4809,
+    "timestamp": "2026-04-22T15:35:08Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 222,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10685,
+    "timestamp": "2026-06-07T05:16:23Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 223,
+    "pipeline": "events_stream",
+    "level": "WARN",
+    "duration_ms": 9587,
+    "timestamp": "2026-06-04T13:25:28Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 224,
+    "pipeline": "customer_sync",
+    "level": "ERROR",
+    "duration_ms": 37513,
+    "timestamp": "2026-04-01T01:18:53Z",
+    "message": "Schema mismatch: unexpected column"
+  },
+  {
+    "log_id": 225,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9693,
+    "timestamp": "2026-06-01T20:42:30Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 226,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 9439,
+    "timestamp": "2026-04-08T15:29:03Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 227,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8106,
+    "timestamp": "2026-05-04T20:20:40Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 228,
+    "pipeline": "customer_sync",
+    "level": "ERROR",
+    "duration_ms": 12385,
+    "timestamp": "2026-04-06T09:38:41Z",
+    "message": "Connection timeout to source API"
+  },
+  {
+    "log_id": 229,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 231,
+    "timestamp": "2026-06-01T23:31:56Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 230,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 403,
+    "timestamp": "2026-05-29T12:29:03Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 231,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 6334,
+    "timestamp": "2026-04-20T07:20:01Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 232,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 11746,
+    "timestamp": "2026-05-30T23:28:24Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 233,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 2260,
+    "timestamp": "2026-04-25T15:46:16Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 234,
+    "pipeline": "events_stream",
+    "level": "ERROR",
+    "duration_ms": 16923,
+    "timestamp": "2026-05-07T18:37:57Z",
+    "message": "Schema mismatch: unexpected column"
+  },
+  {
+    "log_id": 235,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 9112,
+    "timestamp": "2026-04-22T04:59:06Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 236,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 1235,
+    "timestamp": "2026-04-23T10:49:43Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 237,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 11705,
+    "timestamp": "2026-05-31T20:35:37Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 238,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 5266,
+    "timestamp": "2026-05-30T11:39:32Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 239,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 3263,
+    "timestamp": "2026-05-06T09:16:36Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 240,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1291,
+    "timestamp": "2026-05-21T00:06:15Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 241,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 8158,
+    "timestamp": "2026-04-05T09:13:17Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 242,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 11316,
+    "timestamp": "2026-04-28T00:23:06Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 243,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 8426,
+    "timestamp": "2026-05-12T11:58:57Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 244,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5495,
+    "timestamp": "2026-04-18T12:01:16Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 245,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8240,
+    "timestamp": "2026-05-08T15:48:45Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 246,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 1332,
+    "timestamp": "2026-04-09T15:48:51Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 247,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 30,
+    "timestamp": "2026-04-03T03:20:22Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 248,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8379,
+    "timestamp": "2026-05-22T03:52:05Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 249,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 4109,
+    "timestamp": "2026-04-30T21:00:34Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 250,
+    "pipeline": "customer_sync",
+    "level": "WARN",
+    "duration_ms": 6571,
+    "timestamp": "2026-05-28T16:32:25Z",
+    "message": "Retry scheduled after transient failure"
+  },
+  {
+    "log_id": 251,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9279,
+    "timestamp": "2026-05-06T05:16:15Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 252,
+    "pipeline": "events_stream",
+    "level": "ERROR",
+    "duration_ms": 24879,
+    "timestamp": "2026-05-10T16:26:14Z",
+    "message": "Null primary key validation failed"
+  },
+  {
+    "log_id": 253,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 5774,
+    "timestamp": "2026-04-08T06:25:25Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 254,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 6132,
+    "timestamp": "2026-04-16T22:37:44Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 255,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 26694,
+    "timestamp": "2026-04-02T13:24:34Z",
+    "message": "Schema mismatch: unexpected column"
+  },
+  {
+    "log_id": 256,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 6009,
+    "timestamp": "2026-04-30T11:29:41Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 257,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 8449,
+    "timestamp": "2026-05-17T21:05:56Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 258,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 4316,
+    "timestamp": "2026-06-08T22:32:42Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 259,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 10694,
+    "timestamp": "2026-05-21T00:37:12Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 260,
+    "pipeline": "events_stream",
+    "level": "ERROR",
+    "duration_ms": 13397,
+    "timestamp": "2026-05-20T15:24:50Z",
+    "message": "Delta write failed due to conflict"
+  },
+  {
+    "log_id": 261,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 7893,
+    "timestamp": "2026-04-21T21:08:57Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 262,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 6674,
+    "timestamp": "2026-04-21T15:56:42Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 263,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1868,
+    "timestamp": "2026-05-10T08:14:53Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 264,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 11631,
+    "timestamp": "2026-04-25T06:45:11Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 265,
+    "pipeline": "customer_sync",
+    "level": "ERROR",
+    "duration_ms": 8037,
+    "timestamp": "2026-04-11T08:44:26Z",
+    "message": "Connection timeout to source API"
+  },
+  {
+    "log_id": 266,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 10350,
+    "timestamp": "2026-06-06T01:24:07Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 267,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 5167,
+    "timestamp": "2026-05-31T12:19:51Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 268,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 9923,
+    "timestamp": "2026-05-08T04:01:28Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 269,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 16977,
+    "timestamp": "2026-05-04T16:13:24Z",
+    "message": "Connection timeout to source API"
+  },
+  {
+    "log_id": 270,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11432,
+    "timestamp": "2026-05-19T03:35:15Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 271,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 2244,
+    "timestamp": "2026-05-11T03:23:54Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 272,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 3541,
+    "timestamp": "2026-04-07T06:17:30Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 273,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 6676,
+    "timestamp": "2026-05-23T15:42:01Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 274,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 1803,
+    "timestamp": "2026-05-27T05:07:05Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 275,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 10161,
+    "timestamp": "2026-05-25T10:41:01Z",
+    "message": "Small-file count above threshold"
+  },
+  {
+    "log_id": 276,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 9795,
+    "timestamp": "2026-05-09T01:31:49Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 277,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 6136,
+    "timestamp": "2026-04-01T11:37:35Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 278,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 2776,
+    "timestamp": "2026-04-22T01:39:07Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 279,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 11821,
+    "timestamp": "2026-04-10T16:46:18Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 280,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 11602,
+    "timestamp": "2026-04-09T20:52:18Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 281,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 3741,
+    "timestamp": "2026-04-01T02:36:21Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 282,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 8720,
+    "timestamp": "2026-05-27T14:05:26Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 283,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 3061,
+    "timestamp": "2026-04-03T13:14:45Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 284,
+    "pipeline": "orders_ingest",
+    "level": "WARN",
+    "duration_ms": 7934,
+    "timestamp": "2026-05-22T17:33:52Z",
+    "message": "Source response latency increased"
+  },
+  {
+    "log_id": 285,
+    "pipeline": "orders_ingest",
+    "level": "ERROR",
+    "duration_ms": 41890,
+    "timestamp": "2026-04-25T05:33:14Z",
+    "message": "Delta write failed due to conflict"
+  },
+  {
+    "log_id": 286,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 3898,
+    "timestamp": "2026-04-21T23:39:08Z",
+    "message": "Schema validation passed"
+  },
+  {
+    "log_id": 287,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 4885,
+    "timestamp": "2026-04-10T14:59:44Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 288,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 10046,
+    "timestamp": "2026-05-31T20:34:22Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 289,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 4957,
+    "timestamp": "2026-05-27T19:41:40Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 290,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 2244,
+    "timestamp": "2026-04-12T05:38:43Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 291,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 11249,
+    "timestamp": "2026-05-02T13:01:14Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 292,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 2752,
+    "timestamp": "2026-05-29T07:55:55Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 293,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1370,
+    "timestamp": "2026-06-07T17:23:10Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 294,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 9677,
+    "timestamp": "2026-04-28T01:52:19Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 295,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 9205,
+    "timestamp": "2026-05-24T19:13:35Z",
+    "message": "Batch completed successfully"
+  },
+  {
+    "log_id": 296,
+    "pipeline": "orders_ingest",
+    "level": "INFO",
+    "duration_ms": 9246,
+    "timestamp": "2026-04-15T18:12:55Z",
+    "message": "Processed 18,432 records"
+  },
+  {
+    "log_id": 297,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 9606,
+    "timestamp": "2026-05-30T22:32:41Z",
+    "message": "Checkpoint committed"
+  },
+  {
+    "log_id": 298,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 4155,
+    "timestamp": "2026-05-06T07:57:19Z",
+    "message": "Watermark advanced"
+  },
+  {
+    "log_id": 299,
+    "pipeline": "events_stream",
+    "level": "INFO",
+    "duration_ms": 5060,
+    "timestamp": "2026-05-11T04:56:52Z",
+    "message": "Incremental load completed"
+  },
+  {
+    "log_id": 300,
+    "pipeline": "customer_sync",
+    "level": "INFO",
+    "duration_ms": 1157,
+    "timestamp": "2026-04-01T23:45:05Z",
+    "message": "Schema validation passed"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "batch_size": 50,
+  "retry_limit": 3,
+  "allowed_statuses": [
+    "completed",
+    "pending",
+    "cancelled"
+  ],
+  "watermark": "2026-04-01T00:00:00Z"
+}
