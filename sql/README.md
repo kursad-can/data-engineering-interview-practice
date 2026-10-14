@@ -11,24 +11,26 @@ All **five notebooks** share one connection configuration. You never need to edi
    cp db_config.example.ini db_config.ini
    ```
 
-3. Open `sql/db_config.ini` and set `host`, `port`, `dbname`, `user`, and (if required) `password`.
-4. Use the project's Python environment and install `psycopg2-binary`, `pandas`, `ipython`, and `ipykernel` if not installed.
-5. Open VS Code in `coding-exercises/` **or** `coding-exercises/sql/`, select the Python kernel, and run notebooks.
+3. Edit `db_config.ini` in the current `sql/` folder and set `host`, `port`, `dbname`, `user`, and (if required) `password`.
+4. Follow the [root environment instructions](../README.md#prerequisites): Python 3.12 is recommended (3.11 is also supported). Install the root `requirements.txt`, which applies `constraints.txt`, inside the dedicated virtual environment; do not install separate unpinned package versions.
+5. Open VS Code in the repository root **or** its `sql/` folder, select the practice virtual-environment kernel, and run the initialization cells in each notebook. Kernel state is not shared between notebooks.
 
-**Security:** `db_config.ini` is excluded by `sql/.gitignore`; commit only `db_config.example.ini`. Never put real credentials in notebooks or screenshots. If your repository already tracks `db_config.ini`, untrack it with `git rm --cached sql/db_config.ini`.
+**Security:** `db_config.ini` is excluded by the repository's root [`.gitignore`](../.gitignore); there is no separate `sql/.gitignore`. Commit only `db_config.example.ini`. Never put real credentials in notebooks or screenshots. Ignore rules do not protect files already tracked in Git; review tracking before publishing.
 
 **Passwordless connections:** Leave `password =` blank when your local PostgreSQL uses trust/peer authentication or libpq's `.pgpass`/environment mechanisms.
 
 ## Recommended order
 
 - `01_sql_interview_realistic_reseed_80_coverage.ipynb` — **destructive**: recreates the interview tables. Run only when you want to reset data.
-- `02_sql_interview_questions.ipynb` — solve 80 questions yourself.
-- `sql_interview_solutions.ipynb` — reference solutions.
-- `04_sql_interview_validate_all_80.ipynb` — execution validation.
-- `05_sql_interview_correctness_tests.ipynb` — correctness/invariant checks.
+- `02_sql_interview_questions.ipynb` — solve 80 questions yourself in the provided SQL answer cells; keep solutions and audits closed while practicing.
+- `sql_interview_solutions.ipynb` — run a reference solution after your attempt and manually compare full results on the same database. Preserve duplicate rows, NULL semantics and ordering only as specified by the question.
+- `04_sql_interview_validate_all_80.ipynb` — executes embedded reference queries and checks execution/data coverage, not learner answers.
+- `05_sql_interview_correctness_tests.ipynb` — runs embedded reference queries with independent invariants and fixture-coverage checks. Some invariants are weaker than full result comparisons; inspect every final status and detail.
 
-The two report CSVs are generated locally and ignored by Git. Database tables are **not** included in this ZIP; use the seed notebook to populate your own PostgreSQL database.
+Neither validation notebook automatically reads code from your question or solution notebook. Editing those notebooks does not update the embedded reference copies. Passing the audits therefore does not certify a learner's answer.
+
+`sql_interview_validation_report.csv` and `sql_interview_correctness_report.csv` are written to the current working directory. The root `.gitignore` excludes both filenames at the repository root and inside `sql/`. The repository contains seed code, not a PostgreSQL database; use the seed notebook to initialize a dedicated practice database. It recreates the interview tables after confirmation, so do not run it against valuable tables.
 
 ## Working directory
 
-The connection bootstrap locates `db_connection.py` when the Jupyter working directory is either `coding-exercises/` or `coding-exercises/sql/`. If you open VS Code from elsewhere, open one of those folders as your workspace first.
+The connection bootstrap locates `db_connection.py` when the Jupyter working directory is either the repository root (`data-engineering-interview-practice/` after cloning) or its `sql/` subdirectory. Open one of those locations as your workspace and verify the kernel's working directory. Unlike SQL, the Python, Pandas and PySpark tracks require their respective track directory as the kernel working directory.

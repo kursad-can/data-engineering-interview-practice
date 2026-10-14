@@ -1,16 +1,12 @@
 # Data Engineering Interview Practice
 
-**320 hands-on interview questions** across **SQL (PostgreSQL), Python, Pandas, and PySpark**, with 80 questions per track.
-
-Designed for self-study, hands-on data engineering interview preparation, and practicing data quality, transformations, and analytical problem-solving.
+**320 hands-on interview questions** across **SQL (PostgreSQL), Python, Pandas, and PySpark**, with 80 questions per track. Designed for self-study, hands-on data engineering interview preparation, and practicing data quality, transformations, and analytical problem-solving.
 
 Whether you're preparing for your first Data Engineering interview or sharpening your skills for a senior-level role, this repository provides practical exercises covering real-world data engineering concepts.
 
 **Looking for personalized interview preparation?** Check out [Data Role Ready](https://www.dataroleready.com), an AI-powered interview preparation platform that helps you prepare based on your resume and target job description.
 
----
-
-## What's Included
+## What's included
 
 | Track | Questions | Environment | Focus |
 | --- | ---: | --- | --- |
@@ -20,9 +16,7 @@ Whether you're preparing for your first Data Engineering interview or sharpening
 | PySpark | 80 | Python + Apache Spark | Distributed DataFrames, transformations, joins, windows, and data quality |
 | **Total** | **320** | | |
 
-The Python, Pandas, and PySpark tracks use realistic sample datasets with deliberately messy records to practice handling missing, duplicate, inconsistent, and invalid data.
-
-The SQL track uses a locally seeded PostgreSQL database.
+The Python, Pandas, and PySpark tracks use realistic sample datasets with deliberately messy records to practice handling missing, duplicate, inconsistent, and invalid data. The SQL track uses a locally seeded PostgreSQL database.
 
 ### What You'll Practice
 
@@ -36,14 +30,14 @@ The SQL track uses a locally seeded PostgreSQL database.
 
 **All 320 exercises are available for free in this repository. No Data Role Ready account is required.**
 
----
-
-## Repository Structure
+## Repository structure
 
 ```text
-coding-exercises/
+data-engineering-interview-practice/
 ├── README.md                     # This guide
 ├── requirements.txt              # Python dependencies
+├── constraints.txt               # Tested shared transitive dependency versions
+├── scripts/environment_preflight.py
 ├── .gitignore                    # Excludes local files and credentials
 ├── sql/
 │   ├── README.md                 # Detailed PostgreSQL setup
@@ -67,244 +61,86 @@ coding-exercises/
 
 > Notebook filenames may differ slightly between tracks; use the numbered prefixes and descriptive names to identify each step. Local `.venv/`, `.vscode/`, and `sql/db_config.ini` are not meant to be committed.
 
----
-
 ## Prerequisites
 
-- **Python 3** and `pip` (the project was developed/tested locally with **Python 3.14**).
+- **CPython 3.11 or 3.12**, with **3.12 recommended**, and `pip`. Use a dedicated virtual environment; the supported baseline does not include Python 3.14.
 - **VS Code** with the Python and Jupyter extensions, or another Jupyter notebook environment.
-- **Java JDK** compatible with your installed PySpark version for the PySpark track; configure `JAVA_HOME` if needed.
+- **Java JDK 17** for the PySpark track. Set `JAVA_HOME` to the JDK directory when Java is not on PATH or multiple Java installations exist. Do not replace system Java.
 - **PostgreSQL** for the SQL track only (developed/tested locally with **PostgreSQL 18**). No database server is needed for Python, Pandas, or PySpark.
 
-The local PySpark environment used **Spark 4.2.0**.
+### Supported environment
 
-The dependency file does not necessarily pin all versions; if a newer package behaves differently, use compatible versions and consult the relevant project's documentation.
+| Component | Version |
+| --- | --- |
+| Python | 3.11.x or 3.12.x (3.12 recommended) |
+| Pandas / NumPy | 2.3.3 / 2.2.6 |
+| PySpark / PyArrow | 4.2.0 / 19.0.1 |
+| Java | JDK 17 |
+| PostgreSQL adapter | psycopg2-binary 2.9.10 |
+| Jupyter / ipykernel | 1.1.1 / 6.30.1 |
 
----
+This retains the previously tested Spark version while avoiding the Pandas 3 compatibility warning. [Spark 4.2 requires Python 3.10+, Java 17+, Pandas 2.2–2.x and Arrow 18+ for its Pandas/Arrow integrations](https://spark.apache.org/docs/4.2.0/api/python/getting_started/install.html). [Arrow 19 supports Python 3.11 and 3.12](https://arrow.apache.org/docs/19.0/python/install.html). PyArrow is included so the preflight tests the complete Python/Pandas/Arrow worker path, even though most exercises use native Spark operations.
 
-## PySpark / Java Setup
+`requirements.txt` pins direct dependencies and uses `constraints.txt` for the tested shared transitive versions. Constraints do not force installation of another OS's packages; pip resolves additional platform-specific dependencies. This is a version-pinned environment, not a cross-platform artifact/hash lock. Do not independently upgrade packages or mix it with an existing Python 3.14 environment.
 
-The PySpark exercises require a compatible Java Development Kit (JDK). Installing the Python `pyspark` package alone does not install Java.
+## Quick start (macOS / Linux)
 
-### Recommended Environment
-
-| Component | Recommended Version |
-|---|---|
-| Python | 3.11–3.14 (depending on PySpark compatibility) |
-| Apache Spark / PySpark | 4.2.0 (locally tested) |
-| Java JDK | 17 or 21 |
-| IDE | VS Code with Python and Jupyter extensions |
-
-> **Note:** This project was developed and tested locally using PySpark 4.2.0. Other versions may work, but compatibility is not guaranteed. Spark 4.x requires Java 17 or later. Check the official [Apache Spark documentation](https://spark.apache.org/docs/latest/) for version-specific requirements.
-
-### 1. Install Java JDK
-
-#### macOS (Homebrew)
-
-Install OpenJDK 17:
+Clone the repository, then run the setup commands from its root:
 
 ```bash
-brew install openjdk@17
-```
-
-Register the JDK with macOS:
-
-```bash
-sudo ln -sfn "$(brew --prefix openjdk@17)/libexec/openjdk.jdk" /Library/Java/JavaVirtualMachines/openjdk-17.jdk
-```
-
-Configure `JAVA_HOME` for the current terminal session:
-
-```bash
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-export PATH="$JAVA_HOME/bin:$PATH"
-```
-
-To make these settings persistent when using the default macOS Zsh shell:
-
-```bash
-echo 'export JAVA_HOME=$(/usr/libexec/java_home -v 17)' >> ~/.zshrc
-echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-#### Windows
-
-1. Download and install **Eclipse Temurin JDK 17** from [Adoptium](https://adoptium.net/).
-2. During installation, enable the options to set `JAVA_HOME` and update `PATH`, if available.
-3. Restart VS Code and open a new terminal.
-
-Verify Java in PowerShell:
-
-```powershell
-java -version
-echo $env:JAVA_HOME
-```
-
-If `JAVA_HOME` is missing, configure it through:
-
-**System Properties → Advanced → Environment Variables**
-
-Set `JAVA_HOME` to your JDK installation directory and add `%JAVA_HOME%\bin` to `Path`.
-
-#### Ubuntu / Debian Linux
-
-Install OpenJDK 17:
-
-```bash
-sudo apt update
-sudo apt install -y openjdk-17-jdk
-```
-
-Configure `JAVA_HOME` for the current terminal session:
-
-```bash
-export JAVA_HOME=$(dirname "$(dirname "$(readlink -f "$(which java)")")")
-export PATH="$JAVA_HOME/bin:$PATH"
-```
-
-To make the configuration persistent, add the appropriate `JAVA_HOME` and `PATH` exports to your shell startup file (for example, `~/.bashrc`).
-
-### 2. Verify Java Installation
-
-Open a new terminal and run:
-
-```bash
-java -version
-```
-
-Expected output should indicate Java 17 or another compatible version.
-
-On macOS / Linux, verify `JAVA_HOME`:
-
-```bash
-echo $JAVA_HOME
-```
-
-On Windows PowerShell:
-
-```powershell
-echo $env:JAVA_HOME
-```
-
-### 3. Install Python Dependencies
-
-From the repository root, create and activate a Python virtual environment.
-
-**macOS / Linux:**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-**Windows PowerShell:**
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-Install the project dependencies:
-
-```bash
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
-
-> **Version compatibility:** The `requirements.txt` file does not pin PySpark to a specific version. For the locally tested Spark version, you can explicitly install `pyspark==4.2.0`, provided it is compatible with your Python environment.
-
-### 4. Verify PySpark Installation
-
-Run the following Python code in a notebook or Python script:
-
-```python
-from pyspark.sql import SparkSession
-
-spark = (
-    SparkSession.builder
-    .master("local[*]")
-    .appName("DataEngineeringInterviewPractice")
-    .getOrCreate()
-)
-
-print("Spark version:", spark.version)
-
-df = spark.createDataFrame(
-    [(1, "Alice"), (2, "Bob")],
-    ["id", "name"]
-)
-
-df.show()
-
-spark.stop()
-```
-
-Expected DataFrame output:
-
-```text
-+---+-----+
-| id| name|
-+---+-----+
-|  1|Alice|
-|  2|  Bob|
-+---+-----+
-```
-
-If the DataFrame is displayed successfully, your local PySpark environment is ready.
-
-### 5. Common Troubleshooting
-
-| Issue | Possible Solution |
-|---|---|
-| `JAVA_HOME is not set` | Install a compatible JDK and configure `JAVA_HOME`. |
-| `java: command not found` | Verify the Java installation and update `PATH`. |
-| `UnsupportedClassVersionError` | Check that your Java version is compatible with your Spark version. |
-| `Py4JJavaError` | Inspect the underlying Java exception and verify Java/Spark compatibility. |
-| Spark session fails to start | Restart VS Code or the Jupyter kernel after changing Java environment variables. |
-| Python / PySpark compatibility error | Verify the supported Python versions for your installed PySpark release. |
-
-> **Important:** These exercises run locally using Spark's local execution mode. A Databricks workspace, Hadoop cluster, or separate Spark cluster is not required.
-
----
-
-## Quick Start (macOS / Linux)
-
-Open a terminal in the repository root:
-
-```bash
-git clone https://github.com/kursad-can/data-engineering-interview-practice.git
+git clone https://github.com/kursad-can/data-engineering-interview-practice
 cd data-engineering-interview-practice
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
+python3.12 -m venv venv
+source venv/bin/activate
 python -m pip install -r requirements.txt
+python -m pip check
+python -m ipykernel install --sys-prefix --name de-practice --display-name "DE Practice (Python 3.12)"
+python scripts/environment_preflight.py
 code .
 ```
 
-In VS Code, open a notebook and choose the `.venv` Python interpreter/kernel.
+Use an unused environment directory: do not overwrite an existing `venv/` or `.venv/`. Substitute `python3.11` and the matching kernel display name if using Python 3.11. These commands install only into the new venv; they do not change the system interpreter. Notebook initialization no longer runs package installers.
 
-On Windows, activate the environment with `.venv\Scripts\activate` in Command Prompt or `.venv\Scripts\Activate.ps1` in PowerShell.
+In VS Code's notebook kernel picker, select **DE Practice (Python 3.12)** or the new `venv` interpreter, not an old saved `.venv (3.14.2)` label. In Jupyter, launch `python -m jupyter lab` from the activated environment and select the same kernel. Restart a notebook kernel after changing its environment. The kernel registration above is stored inside the venv, not in system directories.
 
-### Recommended Notebook Workflow (Python / Pandas / PySpark)
+### Windows and platform notes
 
-1. `01_*dataset_setup.ipynb` — load and verify the bundled sample datasets.
-2. `02_*questions.ipynb` — attempt the 80 exercises yourself.
-3. `03_*questions_and_solutions.ipynb` — compare with reference solutions.
-4. `04_*validation.ipynb` — run the available dataset and reference checks.
-5. `05_*independent_correctness_audit.ipynb` — run question-specific reference correctness checks.
+In PowerShell, use `py -3.12 -m venv venv`, then `venv\Scripts\Activate.ps1`; run the same `python -m pip`, kernel-registration and preflight commands above. In Command Prompt, activation is `venv\Scripts\activate.bat`. If PowerShell blocks activation, use `venv\Scripts\python.exe` explicitly rather than changing a machine-wide execution policy.
 
-The exact `04_` and `05_` filenames vary by track.
+- **macOS Apple Silicon:** use native ARM64 Python and JDK 17 consistently, not a mixture of Rosetta and native runtimes. If JDK 17 is already registered, select it for the current shell with `export JAVA_HOME=$(/usr/libexec/java_home -v 17)`.
+- **Linux:** Python's `venv` support must be available. Select an existing JDK 17 through `JAVA_HOME`; its value is the JDK root, not its `bin` directory.
+- **Windows:** use matching 64-bit Python/JDK installations and set `JAVA_HOME` for the current shell to the installed JDK 17 directory. Allow local Java/Python communication if prompted by the firewall. If native Spark/Hadoop initialization is unavailable on a particular Windows installation, use WSL2 with a separate Linux venv/JDK; do not download unofficial Hadoop executables as a workaround.
+- Fresh isolated environments with Python 3.12.8 and 3.11.8 were tested on macOS Apple Silicon: both passed preflight, all 320 correctness checks and all 45 lightweight checks. Windows and Linux are supported version targets, not claims of platform-specific test runs. PostgreSQL server setup is separate; the SQL audit was exercised against PostgreSQL 18.1 without reseeding.
 
-Keep the `data/` directory alongside the notebooks, as the notebooks may rely on relative paths.
+### Installing JDK 17 if needed
 
-**Working directory:** For Python, Pandas, and PySpark, launch Jupyter with the corresponding technology directory as the working directory. SQL supports its documented root or track-directory workflow.
+The Python `pyspark` package does not install Java. If JDK 17 is already available, select it as described above; do not replace system Java. Otherwise, install a separate JDK 17:
 
-> **Important:** The validation and correctness notebooks primarily check the supplied datasets and reference implementations. They do not automatically grade code written in the question notebooks. Use them alongside manual comparison with the reference solutions.
+- **macOS (Homebrew):** `brew install openjdk@17`. Select that installation for the current shell with `export JAVA_HOME="$(brew --prefix openjdk@17)/libexec/openjdk.jdk/Contents/Home"` and `export PATH="$JAVA_HOME/bin:$PATH"`. This avoids changing the system JDK registration.
+- **Windows:** obtain Eclipse Temurin JDK 17 from [Adoptium](https://adoptium.net/). Set `JAVA_HOME` to its installation directory and add its `bin` directory to the current shell's `PATH`; restart the notebook kernel after changing the environment.
+- **Ubuntu / Debian:** if you administer the machine, install `openjdk-17-jdk` with your package manager (`sudo apt update`, then `sudo apt install openjdk-17-jdk`). Select its JDK root through `JAVA_HOME` without replacing another application's Java configuration.
 
----
+Run `java -version` and verify that the selected version is 17. Inspect `echo "$JAVA_HOME"` on macOS/Linux or `echo $env:JAVA_HOME` in PowerShell. Add shell settings to your own startup file only if you want them to persist. No Databricks workspace, Hadoop cluster, or separate Spark cluster is required for these local exercises.
 
-## SQL: One Configuration File for All Notebooks
+### Environment preflight and Spark troubleshooting
+
+From the repository root, run `python scripts/environment_preflight.py` in the activated venv. It checks the interpreter, pinned direct-package versions and imports, Java 17, Spark startup, two Python worker tasks, and an eight-row distributed Pandas UDF/Arrow calculation. It does not read or write exercise datasets, change installations, or require a cloud service. A failed check exits with a nonzero status and troubleshooting guidance.
+
+All Spark notebook initialization cells set both `PYSPARK_PYTHON` and `PYSPARK_DRIVER_PYTHON` to `sys.executable` **before** session creation, and set the matching `spark.pyspark.python` / `spark.pyspark.driver.python` properties. Local practice uses `local[2]`, retaining distributed execution with modest resource use. This configuration is for local notebooks; a remote cluster needs the same environment deployed on every worker, not the driver's local filesystem path.
+
+If you see `PYTHON_VERSION_MISMATCH`, confirm `sys.executable` points to the new venv, select the correct kernel, restart it completely, and rerun initialization before other cells. Changing environment variables after a SparkContext exists does not rebuild its workers. For gateway/Java errors, check `JAVA_HOME`, `java -version`, and local firewall/hostname settings. Remove stale `SPARK_HOME` or `PYTHONPATH` overrides from the current shell when using pip-installed Spark. Run `python -m pip check` for dependency conflicts; reinstall the pinned requirements inside the dedicated venv rather than upgrading global packages.
+
+### Recommended notebook workflow (Python / Pandas / PySpark)
+
+1. `01_*dataset_setup.ipynb` — load/check the bundled input fixtures without modifying them. Missing files produce an error; setup does not regenerate data.
+2. `02_*questions.ipynb` — run its initialization cells, then write each answer in the code cell below the question. Keep solution and audit notebooks closed while attempting an exercise; both contain answers.
+3. `03_*questions_and_solutions.ipynb` — after your attempt, run the corresponding reference solution and compare results using the same inputs.
+4. `04_*validation.ipynb` — check dataset consistency, presence of all reference solutions, and their Python syntax. These checks do not execute or grade learner answers; they can also be run before practice as a readiness check.
+5. `05_*independent_correctness_audit.ipynb` — execute embedded reference implementations against independent checks, not code from your question notebook.
+
+The exact `04_` and `05_` filenames vary by track. Keep the `data/` directory alongside the notebooks. For Python, Pandas and PySpark, start the notebook kernel with its technology directory as the working directory (for example, `cd pyspark` before launching Jupyter); the repository root is not a supported data-loading directory for those tracks. Run each notebook's own initialization cells in a fresh kernel: variables do not carry between notebooks. SQL supports either the repository root or `sql/` as described below.
+
+## SQL: one configuration file for all notebooks
 
 SQL notebooks connect to **your own local PostgreSQL instance**. Connection details are **not** hardcoded into individual notebooks.
 
@@ -333,35 +169,23 @@ SQL notebooks connect to **your own local PostgreSQL instance**. Connection deta
 
    Supply a password only if your PostgreSQL authentication requires one. Do **not** commit `db_config.ini`.
 
-4. Open `sql/01_sql_interview_realistic_reseed_80_coverage.ipynb` and run it **only if you want to initialize/reset the interview tables**.
-
-   **Warning:** The setup notebook recreates its interview tables and can delete existing data in those tables. Use a dedicated practice database.
-
+4. Open `sql/01_sql_interview_realistic_reseed_80_coverage.ipynb` and run it **only if you want to initialize/reset the interview tables**. **Warning: the setup notebook recreates its interview tables and can delete existing data in those tables. Use a dedicated practice database.**
 5. Work through `sql/02_sql_interview_questions.ipynb`, then compare answers in `sql/sql_interview_solutions.ipynb`.
+6. Run `sql/04_sql_interview_validate_all_80.ipynb` for embedded reference-query execution checks, then `sql/05_sql_interview_correctness_tests.ipynb` for independent invariants against your current database. Neither notebook reads your answers from the question notebook.
 
-6. Run `sql/04_sql_interview_validate_all_80.ipynb` and `sql/05_sql_interview_correctness_tests.ipynb` to check the reference solutions against your current database.
+See [`sql/README.md`](sql/README.md) for details, including working-directory requirements. All five SQL notebooks use `sql/db_connection.py` to read the same local configuration.
 
-See [`sql/README.md`](sql/README.md) for details, including working-directory requirements.
+## Validation and scope
 
-All five SQL notebooks use `sql/db_connection.py` to read the same local configuration.
+The project includes executable reference solutions and validation/correctness notebooks. In the author's local test environment, **80/80 questions in each track passed the available execution and correctness checks** (320/320 overall). The Python, Pandas, and PySpark dataset validation checks also passed (45/45 combined).
 
----
+These results describe the tested datasets, versions, and implemented checks; **they are not a guarantee of correctness for every possible input or environment**. SQL checks require the database to be initialized and reachable. Some SQL checks establish invariants rather than complete output equality.
 
-## Validation and Scope
+**The validation notebooks do not automatically grade learner answers.** The `05_` notebooks contain embedded reference implementations; editing a question answer or a separate solution notebook does not automatically replace those embedded copies. The non-SQL `04_` checks inspect solution presence/syntax and datasets; SQL `04_` executes its embedded reference queries. Review the final PASS/FAIL/ERROR totals and details, not just whether Run All finished: some correctness notebooks record failures without raising a final exception.
 
-The project includes executable reference solutions and validation/correctness notebooks.
+To check your work manually, run your answer in the question notebook and the corresponding reference in a separate, freshly initialized solution kernel. Compare the full result, not only the displayed preview: values, columns/keys, types where required, row counts, duplicate multiplicities and missing-value behavior. Compare ordering only where the approved question requires it; otherwise compare records without imposing a new sort rule. Equivalent implementations need not use the same methods as the reference. For file-writing exercises, compare the produced files and their contents.
 
-In the author's local test environment, **80/80 questions in each track passed the available execution and correctness checks (320/320 overall)**.
-
-The Python, Pandas, and PySpark dataset validation checks also passed (45/45 combined).
-
-These results describe the tested datasets, versions, and implemented checks; **they are not a guarantee of correctness for every possible input or environment**.
-
-The correctness notebooks evaluate reference implementations, not solutions entered by learners into the question notebooks. They are intended to support self-study and reference verification rather than automated grading.
-
-SQL checks require the database to be initialized and reachable.
-
----
+Python Q32 writes `python/data/completed_orders_output.csv`; Q39 writes one `python/data/orders_YYYY-MM-DD.json` per order date. Their audit checks read those outputs after generating them in the same exercise. These are reproducible outputs, not required input fixtures. Running the Python solution/audit notebooks may overwrite them. Validation also writes report CSVs in the current track directory (or repository root for SQL); these reports are ignored by Git. Use an isolated copy of the track when you want to run reference audits without changing your local exercise outputs.
 
 ## 🚀 Take Your Data Engineering Interview Preparation Further
 
@@ -413,17 +237,13 @@ Instead of relying entirely on generic interview questions, Data Role Ready focu
 
 *Data Role Ready is developed by the creator of this repository. The 320 exercises here remain freely available without registration or a paid subscription.*
 
----
-
-## Keeping a Public Fork Safe
+## Keeping a public fork safe
 
 - **Never commit** `sql/db_config.ini`, `.env` files, passwords, tokens, API keys, database dumps, or personal data.
 - Keep `.venv/`, notebook checkpoints, local IDE settings, and generated temporary files out of Git.
 - Review notebook **code, markdown, and saved cell outputs** for local paths, credentials, or other sensitive information before publishing.
 - `.gitignore` does **not** remove secrets already committed to Git history. If a secret was committed, revoke/rotate it and clean the history before making the repository public.
 - The provided datasets are intended for practice; inspect any additional datasets before sharing them.
-
----
 
 ## Contributing and Usage
 
@@ -437,10 +257,8 @@ If you find this repository helpful, consider giving it a **GitHub star ⭐** to
 
 For more personalized interview preparation, visit **[Data Role Ready](https://www.dataroleready.com)**.
 
----
+These validation notebooks check supplied references and datasets, not answers entered in question notebooks. Compare your results manually as described above.
 
 ## License
 
-This project is licensed under the MIT License.
-
-See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Retain the copyright and permission notice when redistributing copies or substantial portions; the software is provided without warranty. See the [LICENSE](LICENSE) file for the complete terms.
