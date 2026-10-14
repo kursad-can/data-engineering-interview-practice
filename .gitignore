@@ -59,3 +59,25 @@ db_config.ini
 # Archives
 # ==========================================
 *.zip
+
+# Generated validation reports (only documented execution locations)
+/python/validation_v3_report.csv
+/pandas/validation_v3_report.csv
+/pyspark/validation_v3_report.csv
+/python/python_correctness_final_report.csv
+/pandas/pandas_correctness_final_report.csv
+/pyspark/pyspark_correctness_final_report.csv
+/sql/sql_interview_validation_report.csv
+/sql/sql_interview_correctness_report.csv
+/sql_interview_validation_report.csv
+/sql_interview_correctness_report.csv
+
+# Spark staging and per-session artifacts, not warehouses or input datasets
+/.sparkStaging/
+/pyspark/.sparkStaging/
+/artifacts/spark-*/
+/pyspark/artifacts/spark-*/
+
+# Reproducible Python exercise outputs (Q32 and Q39)
+/python/data/completed_orders_output.csv
+/python/data/orders_[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json
