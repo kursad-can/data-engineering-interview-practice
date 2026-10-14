@@ -1,13 +1,11 @@
-# PostgreSQL
-psycopg2-binary
-
-# Data manipulation
-pandas
-numpy
-
-# PySpark
-pyspark
-
-# Jupyter / VS Code notebook support
-ipykernel
-jupyter
+# Supported interpreter: CPython 3.11 or 3.12 (3.12 recommended).
+# Install inside a dedicated virtual environment; Java 17 is required for Spark.
+# Exact direct pins plus the tested shared transitive dependency constraints.
+-c constraints.txt
+psycopg2-binary==2.9.10
+pandas==2.3.3
+numpy==2.2.6
+pyspark==4.2.0
+pyarrow==19.0.1
+ipykernel==6.30.1
+jupyter==1.1.1
